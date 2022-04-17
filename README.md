@@ -24,39 +24,30 @@
 pip install -r requirements.txt
 ```
 
-Создайте файл миграции
-
-```sh
-python3 manage.py makemigrations
-```
-Примечание: файл миграции по-умолчанию расположен в репозитории.
-Шаг необязательный, если не вносились изменения.
-
-Для доступа в админку потребуется создать `superuser`:
-
-```sh
-python3 manage.py createsuperuser
-```
-
 Экспортируйте данные в БД миграции
 
 ```sh
-python3 manage.py makemigrations
+python manage.py makemigrations
 ```
 Синхронизируем БД:
 ```sh
-python3 manage.py migrate --run-syncdb 
+python manage.py migrate --run-syncdb 
+```
+Для доступа в админку потребуется создать `superuser`:
+
+```sh
+python manage.py createsuperuser
 ```
 Запустите разработческий сервер
 
 ```sh
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ### Что умеет сайт
 
 С помощью сайта Вы сможете:
-- Создавать и оисать любые виды покемонов, их боевые характеристики, а также цепочку их эволюции;
+- Создавать и описывать любые виды покемонов, их боевые характеристики, а также цепочку их эволюции;
 - Отображать на карте активных покемонов каждого вида для помощи игрокам  
 
 ### Как работать с сайтом
