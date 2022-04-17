@@ -29,6 +29,9 @@ pip install -r requirements.txt
 ```sh
 python manage.py makemigrations
 ```
+Шаг необязательный, если Вы не вносили изменения в модели.
+По умолчанию в репозитории уже размещен файл миграций `migrations/0001_initial.py`
+
 Синхронизируем БД:
 ```sh
 python manage.py migrate --run-syncdb 
