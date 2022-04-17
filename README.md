@@ -29,12 +29,8 @@ pip install -r requirements.txt
 ```sh
 python3 manage.py makemigrations
 ```
-
-Экспортируйте данные в БД миграции
-
-```sh
-python3 manage.py makemigrations
-```
+Примечание: файл миграции по-умолчанию расположен в репозитории.
+Шаг необязательный, если не вносились изменения.
 
 Для доступа в админку потребуется создать `superuser`:
 
@@ -49,7 +45,7 @@ python3 manage.py makemigrations
 ```
 Синхронизируем БД:
 ```sh
-python manage.py migrate --run-syncdb 
+python3 manage.py migrate --run-syncdb 
 ```
 Запустите разработческий сервер
 
