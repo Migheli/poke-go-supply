@@ -47,8 +47,10 @@ python3 manage.py createsuperuser
 ```sh
 python3 manage.py makemigrations
 ```
-
-
+Синхронизируем БД:
+```sh
+python manage.py migrate --run-syncdb 
+```
 Запустите разработческий сервер
 
 ```sh
